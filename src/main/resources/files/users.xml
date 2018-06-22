@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <user i:type="worker">
+        <id>1</id>
+        <name>Unmi</name>
+        <time>2010-11-18T21:57:15.07</time>
+    </user>
+    <user i:type="yuan">
+        <id>2</id>
+        <name>She</name>
+        <time>2010-10-18T21:20:15.25</time>
+    </user>
+</users>
