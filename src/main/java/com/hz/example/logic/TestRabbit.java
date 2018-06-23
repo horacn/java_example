@@ -56,7 +56,7 @@ public class TestRabbit {
 	public void test3() {
 		long s1 = 1;
 		long s2 = 1;
-		int count = 12;//12个月
+		int count = 12; // 12个月
 		long temp;
 		for (int i = 1; i <= count; i++) {
 			if (i == 1) {

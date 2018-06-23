@@ -1,7 +1,4 @@
-package com.hz.example.interf.man;
-
-import com.hz.example.interf.man.Husband;
-import com.hz.example.interf.man.Wife;
+package com.hz.example.intf.man;
 
 public class TestWifeAndHusband {
 	public static void main(String[] args) {

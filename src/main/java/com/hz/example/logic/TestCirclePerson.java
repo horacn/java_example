@@ -1,7 +1,7 @@
 package com.hz.example.logic;
 
 /**
- * 一群人围成一个圈 报数
+ * 17个人围成圈，编号为1—17，从第1号开始报数，报到3的倍数的人离开，一直数下去，直到最后只剩下1人。求此人的编号。
  */
 public class TestCirclePerson {
 	public static void main(String[] args) {

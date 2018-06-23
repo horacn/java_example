@@ -1,4 +1,4 @@
-package com.hz.example.socket;
+package com.hz.example.socket.client;
 
 import java.io.BufferedReader;
 import java.io.IOException;

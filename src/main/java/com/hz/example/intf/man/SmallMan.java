@@ -1,4 +1,4 @@
-package com.hz.example.interf.man;
+package com.hz.example.intf.man;
 
 public class SmallMan extends Man {
 

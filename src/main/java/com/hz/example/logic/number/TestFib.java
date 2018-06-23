@@ -1,4 +1,4 @@
-package com.hz.example.logic;
+package com.hz.example.logic.number;
 
 /**
  * 斐波那契数列

@@ -1,6 +1,4 @@
-package com.hz.example.interf.man;
-
-import com.hz.example.interf.man.Wife;
+package com.hz.example.intf.man;
 
 public class Husband {
 	private String name;

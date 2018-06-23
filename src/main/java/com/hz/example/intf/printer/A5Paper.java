@@ -1,4 +1,4 @@
-package com.hz.example.interf.printer;
+package com.hz.example.intf.printer;
 
 public class A5Paper implements Paper {
 

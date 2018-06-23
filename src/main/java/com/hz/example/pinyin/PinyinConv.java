@@ -28,9 +28,9 @@ public class PinyinConv {
     // 初始化
     static {
         for (int i = 0; i < 26; i++) {
-            table[i] = gbValue(chartable[i]);// 得到GB2312码的首字母区间端点表，十进制。
+            table[i] = gbValue(chartable[i]); // 得到GB2312码的首字母区间端点表，十进制。
         }
-        table[26] = END;// 区间表结尾
+        table[26] = END; // 区间表结尾
     }
  
     // ------------------------public方法区------------------------
@@ -68,16 +68,16 @@ public class PinyinConv {
         // 若是，则在码表内的进行判断。
         int gb = gbValue(ch);// 汉字转换首字母
  
-        if ((gb < BEGIN) || (gb > END))// 在码表区间之前，直接返回
+        if ((gb < BEGIN) || (gb > END)) // 在码表区间之前，直接返回
             return ch;
  
         int i;
-        for (i = 0; i < 26; i++) {// 判断匹配码表区间，匹配到就break,判断区间形如“[,)”
+        for (i = 0; i < 26; i++) { // 判断匹配码表区间，匹配到就break,判断区间形如“[,)”
                 if ((gb >= table[i]) && (gb < table[i+1]))
                     break;
         }
         
-        if (gb==END) {//补上GB2312区间最右端
+        if (gb==END) { //补上GB2312区间最右端
             i=25;
         }
         return initialtable[i]; // 在码表区间中，返回首字母

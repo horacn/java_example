@@ -6,7 +6,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 
 import com.google.gson.Gson;
 
-import com.hz.example.interf.man.Wife;
+import com.hz.example.intf.man.Wife;
 import com.hz.example.util.HttpClientUtils;
 
 public class Test5 {
@@ -91,7 +91,7 @@ class Main2 {
 }
 
 
-class testHttp{
+class TestHttp{
 	public static void main(String[] args) {
 		Map map = new HashMap();
 		map.put("key", "beb2a6cee1c049e5981a2bb3bfba1e98");
@@ -122,7 +122,7 @@ class MyGenericClass<T,V>{
     
 }
 
-class tsf{
+class Tsf{
 	public static void main(String[] args) {
 		Wife s  = new Wife();
 		s.setName("小鱼");
@@ -130,5 +130,4 @@ class tsf{
 		System.out.println(s.toString());
 		
 	}
-	
 }

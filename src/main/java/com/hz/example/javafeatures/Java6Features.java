@@ -73,7 +73,6 @@ public class Java6Features {
 		customer.setAge(29);
 
 		try {
-
 			File file = new File(this.getClass().getResource("/").getPath() + "/files/customer.xml");
 			JAXBContext jaxbContext = JAXBContext.newInstance(Customer.class);
 			//由 JavaBean 到 XML
@@ -90,6 +89,11 @@ public class Java6Features {
 		}
 	}
 
+	/**
+	 * 使用JAXB2来实现对象与XML之间的映射
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void test3() throws Exception {
 		JAXBContext context = JAXBContext.newInstance(UserList.class);
