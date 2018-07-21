@@ -27,7 +27,6 @@ public class TestLevelDB {
 
     public static void main(String[] args) {
 
-        Charset charset = StandardCharsets.UTF_8;
         String path = "files/leveldb";
         boolean cleanup = true;
         DB db = null;
