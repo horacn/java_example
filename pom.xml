@@ -61,11 +61,6 @@
             <version>2.6</version>
         </dependency>
         <dependency>
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
-            <version>1.3.3</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.7</version>
@@ -185,16 +180,6 @@
             <version>${fasterxml.jackson.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-            <version>${fasterxml.jackson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-            <version>${fasterxml.jackson.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>${fasterxml.jackson.version}</version>
@@ -239,16 +224,6 @@
             <artifactId>json-lib</artifactId>
             <version>2.4</version>
             <classifier>jdk15</classifier>
-        </dependency>
-        <dependency>
-            <groupId>net.sf.ezmorph</groupId>
-            <artifactId>ezmorph</artifactId>
-            <version>1.0.6</version>
-        </dependency>
-        <dependency>
-            <groupId>de.odysseus.staxon</groupId>
-            <artifactId>staxon</artifactId>
-            <version>1.3</version>
         </dependency>
 
         <!--计算能力-->
@@ -301,6 +276,19 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Leveldb是一个google实现的非常高效的kv数据库 -->
+        <!-- https://github.com/dain/leveldb -->
+        <dependency>
+            <groupId>org.iq80.leveldb</groupId>
+            <artifactId>leveldb</artifactId>
+            <version>0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.iq80.leveldb</groupId>
+            <artifactId>leveldb-api</artifactId>
+            <version>0.10</version>
+        </dependency>
+
         <!--dom-->
         <dependency>
             <groupId>dom4j</groupId>
@@ -326,11 +314,6 @@
         <!--poi-->
         <dependency>
             <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>${poi.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>${poi.version}</version>
         </dependency>
@@ -347,11 +330,6 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml-schemas</artifactId>
-            <version>${poi.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-scratchpad</artifactId>
             <version>${poi.version}</version>
         </dependency>
         <dependency>
@@ -441,15 +419,5 @@
                 </configuration>
             </plugin>
         </plugins>
-        <pluginManagement>
-            <plugins>
-                <!-- tomcat7 -->
-                <plugin>
-                    <groupId>org.apache.tomcat.maven</groupId>
-                    <artifactId>tomcat7-maven-plugin</artifactId>
-                    <version>2.2</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 </project>
