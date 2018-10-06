@@ -198,6 +198,11 @@
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>${fasterxml.jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>${fasterxml.jackson.version}</version>
         </dependency>
@@ -206,29 +211,12 @@
             <artifactId>jackson-module-jaxb-annotations</artifactId>
             <version>${fasterxml.jackson.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-xml</artifactId>
-            <version>${fasterxml.jackson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-core-asl</artifactId>
-            <version>${codehaus.jackson.version}</version>
-        </dependency>
+        <!-- codehaus -->
+        <!-- Jackson fasterxml和codehaus的区别：
+        他们是Jackson的两大分支、也是两个版本的不同包名。Jackson从2.0开始改用新的包名fasterxml；1.x版本的包名是codehaus。除了包名不同，他们的Maven artifact id也不同。1.x版本现在只提供bug-fix，而2.x版本还在不断开发和发布中。如果是新项目，建议直接用2x，即fasterxml jackson。-->
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
-            <version>${codehaus.jackson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-jaxrs</artifactId>
-            <version>${codehaus.jackson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-xc</artifactId>
             <version>${codehaus.jackson.version}</version>
         </dependency>
         <dependency>
@@ -241,6 +229,12 @@
             <artifactId>json-lib</artifactId>
             <version>2.4</version>
             <classifier>jdk15</classifier>
+        </dependency>
+        <!-- 用于将一种对象转换成另外一种对象。EZMorph原先是Json-lib项目中的转换器。 -->
+        <dependency>
+            <groupId>net.sf.ezmorph</groupId>
+            <artifactId>ezmorph</artifactId>
+            <version>1.0.6</version>
         </dependency>
 
         <!--计算能力-->
