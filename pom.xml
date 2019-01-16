@@ -237,11 +237,18 @@
             <version>1.0.6</version>
         </dependency>
 
-        <!--计算能力-->
+        <!-- 瓜娃，Google工具包 -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>23.0</version>
+        </dependency>
+
+        <!-- 提供丰富的Java工具方法 -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.1.14</version>
         </dependency>
 
         <!--图像处理-->
