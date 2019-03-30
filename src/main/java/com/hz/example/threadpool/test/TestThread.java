@@ -3,6 +3,7 @@ package com.hz.example.threadpool.test;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 多线程执行耗时测试
@@ -13,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class TestThread {
 
-    static int count = 0;
+    private static final AtomicInteger count = new AtomicInteger(0);
 
     public static void main(String[] args) {
 
@@ -24,7 +25,7 @@ public class TestThread {
 
         Runnable runnable = () -> {
             while (true) {
-                System.out.println(Thread.currentThread().getName() + " - 正在运行 - ["+ (System.currentTimeMillis() - start) / 1000.0 +"秒] - "  + (++count) + "次执行");
+                System.out.println(Thread.currentThread().getName() + " - 正在运行 - ["+ (System.currentTimeMillis() - start) / 1000.0 +"秒] - "  + (count.incrementAndGet()) + "次执行");
                 try {
                     // 模拟耗时操作，50毫秒
                     TimeUnit.MILLISECONDS.sleep(50);
